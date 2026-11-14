@@ -233,3 +233,10 @@ footer {
 .contact li { margin-bottom: .35rem; }
 .contact a { font-weight: 500; font-size: 1.05rem; }
 .contact span { color: var(--muted); font-size: .82rem; margin-left: .4rem; }
+
+/* ---------- Closing line of the bio ---------- */
+.closing {
+  margin: 1.5rem 0 0; padding: .15rem 0 .15rem 1.1rem;
+  border-left: 3px solid var(--accent);
+  font-size: 1.12rem; font-style: italic; line-height: 1.5;
+}
