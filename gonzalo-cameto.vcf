@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Cameto;Gonzalo;;;
+FN:Gonzalo Cameto
+TITLE:Software Tech Lead & Applied ML Researcher
+ORG:Facultad de Ingeniería\, Universidad de la República
+EMAIL;TYPE=INTERNET,WORK:gcameto@fing.edu.uy
+URL:https://gonzalocameto.github.io/
+URL:https://www.linkedin.com/in/gonzalo-cameto/
+URL:https://github.com/gonzalocameto
+ADR;TYPE=WORK:;;;Montevideo;;;Uruguay
+NOTE:CIARP 2026 — HyenaLAI
+END:VCARD
