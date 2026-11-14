@@ -6,7 +6,6 @@ Personal site. Plain static HTML + CSS, no build step, no Jekyll (`.nojekyll`).
 index.html            the page
 assets/style.css      styles (light/dark follow the OS)
 assets/favicon.svg
-gonzalo-cameto.vcf    "Save contact" card
 slides/               talk PDFs (e.g. slides/hyenalai-ciarp2026.pdf)
 qr/qr-ciarp26.svg     QR for the last CIARP slide → https://gonzalocameto.github.io/?ref=ciarp26
 ```
@@ -42,7 +41,7 @@ GoatCounter is free for personal sites, cookieless (no consent banner) and needs
 What you get:
 - **Visits from the talk**: the QR points to `?ref=ciarp26`; GoatCounter reports `ref` / `utm_*` parameters as the
   referrer/campaign, so CIARP scans show up separately from other traffic.
-- **Clicks**: links with `data-goatcounter-click="…"` (vCard, code, BibTeX, LinkedIn…) are counted as events.
+- **Clicks**: links with `data-goatcounter-click="…"` (emails, code, BibTeX, LinkedIn…) are counted as events.
 
 ## Pending
 

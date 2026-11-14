@@ -36,13 +36,11 @@
         Software Tech Lead &amp; Applied ML Researcher</p>
 
       <nav class="links" aria-label="Profiles">
-        <a href="mailto:gcameto@fing.edu.uy" data-goatcounter-click="email">Email</a>
+        <a class="primary" href="mailto:gcameto@fing.edu.uy" data-goatcounter-click="email">Email</a>
         <a href="https://github.com/gonzalocameto" data-goatcounter-click="github">GitHub</a>
         <a href="https://www.linkedin.com/in/gonzalo-cameto/" data-goatcounter-click="linkedin">LinkedIn</a>
-        <a href="https://orcid.org/0009-0009-7932-1520" data-goatcounter-click="orcid">ORCID</a>
         <!-- TODO: add Google Scholar once the profile exists:
         <a href="https://scholar.google.com/citations?user=XXXX" data-goatcounter-click="scholar">Scholar</a> -->
-        <a class="primary" href="gonzalo-cameto.vcf" download data-goatcounter-click="vcard">Save contact</a>
       </nav>
     </div>
   </header>
@@ -51,7 +49,7 @@
     <h2 id="about">About</h2>
     <p>Computer Engineer (2017) and MSc in Mathematical Engineering (2026) from the Facultad de Ingeniería,
       Universidad de la República (UdelaR), Uruguay.</p>
-    <p>Over nine years in the software industry, leading development, architecture and cloud deployments.</p>
+    <p>Ten years in the software industry, leading development, architecture and cloud deployments.</p>
     <p>Now applying that engineering background to research in deep learning for genomics, long-sequence
       modelling, and AgTech (genotype × environment interaction in crops).</p>
     <p>Always interested in research collaborations, technical exchanges, and applied machine learning problems
@@ -77,7 +75,8 @@
   <section aria-labelledby="research">
     <h2 id="research">Research &amp; projects</h2>
 
-    <article class="card" id="hyenalai">
+    <article class="card card-split" id="hyenalai">
+      <div class="card-text">
       <h3>HyenaLAI: Local Ancestry Inference from Positional Individual's Variation</h3>
       <p class="meta">G. Cameto, M. I. Fariello, F. Lecumberry · CIARP 2026, Springer LNCS</p>
       <p>A single end-to-end model for local ancestry inference from SNPs, built on the subquadratic HyenaDNA
@@ -106,9 +105,21 @@
   year      = {2026}
 }</pre>
       </details>
+      </div>
+      <figure class="card-figure">
+        <a href="assets/hyenalai-ancestry-map.png" data-goatcounter-click="hyenalai-map">
+          <img src="assets/hyenalai-ancestry-map.png" width="989" height="903" loading="lazy"
+               alt="Chromosome-by-chromosome local ancestry map of one individual: each of the 22 chromosomes is drawn as two bars, one per haplotype, coloured by inferred ancestry."></a>
+        <figcaption>
+          <span class="legend"><i style="background:#1f77b4"></i>EUR <i style="background:#ff7f0e"></i>EAS <i style="background:#2ca02c"></i>AFR</span>
+          Local ancestry inferred by HyenaLAI along the 22 autosomes of an admixed individual
+          (NA19761, Mexican ancestry, 1000 Genomes). Position in Mb.
+        </figcaption>
+      </figure>
     </article>
 
-    <article class="card">
+    <article class="card card-photo">
+      <img class="card-bg" src="assets/wheat.jpg" alt="" loading="lazy">
       <h3>Applied ML in AgTech: genotype × environment</h3>
       <p>Ongoing work on statistical modelling and deep learning to predict crop yield and model
         genotype × environment interaction.</p>
@@ -123,12 +134,20 @@
       <dd>BSc in Computer Engineering, UdelaR (2017)</dd>
       <dt>Experience</dt>
       <dd>Software Tech Lead &amp; Senior Software Engineer (2017–present)</dd>
-      <dd>Teaching Assistant, <em>Modelos Estadísticos</em>, FING-UdelaR (2026)</dd>
+      <dd>Teaching Assistant, <em>Modelos Estadísticos para la Regresión y la Clasificación</em> (Statistical Models for Regression and Classification), FING-UdelaR (2026)</dd>
     </dl>
   </section>
 
+  <section aria-labelledby="contact">
+    <h2 id="contact">Contact</h2>
+    <ul class="contact">
+      <li><a href="mailto:gcameto@fing.edu.uy" data-goatcounter-click="email-fing">gcameto@fing.edu.uy</a> <span>academic</span></li>
+      <li><a href="mailto:gonzalocameto@gmail.com" data-goatcounter-click="email-personal">gonzalocameto@gmail.com</a> <span>personal</span></li>
+    </ul>
+  </section>
+
   <footer>
-    <p>gcameto@fing.edu.uy · Montevideo, Uruguay</p>
+    <p>Gonzalo Cameto · Montevideo, Uruguay · Wheat photo: Dominik Martin (CC0)</p>
   </footer>
 </main>
 
