@@ -45,7 +45,6 @@ What you get:
 
 ## Pending
 
-- [ ] Paper button → Springer DOI once the proceedings are online (also add `doi`/`pages` to the BibTeX).
-- [ ] Slides button → copy the PDF to `slides/hyenalai-ciarp2026.pdf` after the talk (Nov 26) and swap the span.
+- [ ] Slides button → after the talk (Nov 26) copy the PDF to `slides/hyenalai-ciarp2026.pdf` and uncomment the link in `index.html`.
 - [ ] Google Scholar link, if a profile is created.
 - [ ] Confirm `github.com/gonzalocameto/hyena-lai` is public before the talk.
