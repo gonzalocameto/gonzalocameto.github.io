@@ -6,6 +6,10 @@
   <title>Gonzalo Cameto</title>
   <meta name="description" content="Gonzalo Cameto — Computer Engineer and MSc in Mathematical Engineering (UdelaR). Software tech lead and applied ML researcher: deep learning for genomics and AgTech.">
   <meta name="color-scheme" content="light dark">
+  <script>
+    // Apply a saved theme before first paint (falls back to the OS setting).
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/style.css">
 
@@ -14,25 +18,33 @@
   <meta property="og:description" content="Software tech lead and applied ML researcher. HyenaLAI at CIARP 2026.">
   <meta property="og:url" content="https://gonzalocameto.github.io/">
   <meta property="og:type" content="profile">
+  <meta property="og:image" content="https://gonzalocameto.github.io/assets/avatar.jpg">
 </head>
 <body>
 <main>
 
+  <button class="theme-toggle" type="button" aria-label="Switch between light and dark theme" title="Light / dark">
+    <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+  </button>
+
   <header class="hero">
-    <h1>Gonzalo Cameto</h1>
-    <p class="subtitle">Computer Engineer &amp; MSc in Mathematical Engineering<br>
-      Software Tech Lead &amp; Applied ML Researcher</p>
+    <img class="avatar" src="assets/avatar.jpg" width="136" height="136" alt="Portrait of Gonzalo Cameto">
+    <div class="hero-text">
+      <h1>Gonzalo Cameto</h1>
+      <p class="subtitle">Computer Engineer &amp; MSc in Mathematical Engineering<br>
+        Software Tech Lead &amp; Applied ML Researcher</p>
 
-    <nav class="links" aria-label="Profiles">
-      <a href="mailto:gcameto@fing.edu.uy" data-goatcounter-click="email">Email</a>
-      <a href="https://github.com/gonzalocameto" data-goatcounter-click="github">GitHub</a>
-      <a href="https://www.linkedin.com/in/gonzalo-cameto/" data-goatcounter-click="linkedin">LinkedIn</a>
-      <a href="https://orcid.org/0009-0009-7932-1520" data-goatcounter-click="orcid">ORCID</a>
-      <!-- TODO: add Google Scholar once the profile exists:
-      <a href="https://scholar.google.com/citations?user=XXXX" data-goatcounter-click="scholar">Scholar</a> -->
-    </nav>
-
-    <a class="btn btn-primary" href="gonzalo-cameto.vcf" download data-goatcounter-click="vcard">Save contact (.vcf)</a>
+      <nav class="links" aria-label="Profiles">
+        <a href="mailto:gcameto@fing.edu.uy" data-goatcounter-click="email">Email</a>
+        <a href="https://github.com/gonzalocameto" data-goatcounter-click="github">GitHub</a>
+        <a href="https://www.linkedin.com/in/gonzalo-cameto/" data-goatcounter-click="linkedin">LinkedIn</a>
+        <a href="https://orcid.org/0009-0009-7932-1520" data-goatcounter-click="orcid">ORCID</a>
+        <!-- TODO: add Google Scholar once the profile exists:
+        <a href="https://scholar.google.com/citations?user=XXXX" data-goatcounter-click="scholar">Scholar</a> -->
+        <a class="primary" href="gonzalo-cameto.vcf" download data-goatcounter-click="vcard">Save contact</a>
+      </nav>
+    </div>
   </header>
 
   <section aria-labelledby="about">
@@ -121,6 +133,15 @@
 </main>
 
 <script>
+  // Theme toggle: flips the current theme and remembers the choice.
+  document.querySelector('.theme-toggle').addEventListener('click', function () {
+    var root = document.documentElement;
+    var dark = root.dataset.theme ? root.dataset.theme === 'dark'
+                                  : matchMedia('(prefers-color-scheme: dark)').matches;
+    root.dataset.theme = dark ? 'light' : 'dark';
+    try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+  });
+
   // Copy BibTeX to the clipboard.
   document.querySelectorAll('[data-copy]').forEach(function (btn) {
     btn.addEventListener('click', function () {
