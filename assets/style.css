@@ -240,3 +240,6 @@ footer {
   border-left: 3px solid var(--accent);
   font-size: 1.12rem; font-style: italic; line-height: 1.5;
 }
+
+/* The hidden attribute must win over display rules such as .btn */
+[hidden] { display: none !important; }

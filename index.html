@@ -50,8 +50,8 @@
     <p>Computer Engineer (2017) and MSc in Mathematical Engineering (2026) from the Facultad de Ingeniería,
       Universidad de la República (UdelaR), Uruguay.</p>
     <p>Ten years in the software industry, leading development, architecture and cloud deployments.</p>
-    <p>Now applying that engineering background to research in genomics, long-sequence
-      modelling, and AgTech (genotype × environment interaction in crops).</p>
+    <p>Alongside that, applied research in genomics, long-sequence modelling, and AgTech
+      (genotype × environment interaction in crops).</p>
     <p class="closing">Genomics gave us the book. Deep learning is a way of understanding it.</p>
   </section>
 
@@ -86,8 +86,8 @@
         <a class="btn" href="https://doi.org/10.1007/978-3-032-43217-9_16" data-goatcounter-click="hyenalai-paper" target="_blank" rel="noopener">Paper</a>
         <a class="btn" href="https://github.com/gonzalocameto/hyena-lai" data-goatcounter-click="hyenalai-code" target="_blank" rel="noopener">Code</a>
         <a class="btn" href="https://huggingface.co/gcameto/hyena-lai" data-goatcounter-click="hyenalai-weights" target="_blank" rel="noopener">Weights</a>
-        <!-- TODO: after the talk, copy the PDF to slides/hyenalai-ciarp2026.pdf and uncomment:
-        <a class="btn" href="slides/hyenalai-ciarp2026.pdf" data-goatcounter-click="hyenalai-slides">Slides (PDF)</a> -->
+        <!-- Slides: hidden until the talk starts (see script below) and until the PDF exists at this path. -->
+        <a class="btn" id="slides-link" hidden href="slides/hyenalai-ciarp2026.pdf" data-goatcounter-click="hyenalai-slides" target="_blank" rel="noopener">Slides</a>
         <button class="btn" type="button" data-copy="bibtex" data-goatcounter-click="hyenalai-bibtex">Copy BibTeX</button>
       </div>
       <details>
@@ -122,8 +122,8 @@
     <article class="card card-photo">
       <img class="card-bg" src="assets/wheat.jpg" alt="" loading="lazy">
       <h3>Applied ML in AgTech: genotype × environment</h3>
-      <p>Ongoing work on statistical modelling and deep learning to predict crop yield and model
-        genotype × environment interaction.</p>
+      <p>Ongoing work on predicting wheat yield across environments, combining mixed-model statistics
+        with deep sequence models.</p>
     </article>
   </section>
 
@@ -161,6 +161,14 @@
     root.dataset.theme = dark ? 'light' : 'dark';
     try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
   });
+
+  // Slides button: shown from the start of the CIARP talk (Thu Nov 26, 15:20 Mexico City, UTC-6),
+  // and only if the PDF has actually been uploaded.
+  (function () {
+    var link = document.getElementById('slides-link');
+    if (Date.now() < Date.parse('2026-11-26T15:20:00-06:00')) return;
+    fetch(link.href, { method: 'HEAD' }).then(function (r) { if (r.ok) link.hidden = false; }).catch(function () {});
+  })();
 
   // Copy BibTeX to the clipboard.
   document.querySelectorAll('[data-copy]').forEach(function (btn) {

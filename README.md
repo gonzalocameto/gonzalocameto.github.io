@@ -45,7 +45,7 @@ What you get:
 
 ## Pending
 
-- [ ] Slides button → after the talk (Nov 26) copy the PDF to `slides/hyenalai-ciarp2026.pdf` and uncomment the link in `index.html`.
+- [ ] Slides: copy the PDF to `slides/hyenalai-ciarp2026.pdf` and push **before the talk**. The button appears by itself from Thu Nov 26, 15:20 Mexico City time, and only if the file is there (date in the script at the bottom of `index.html`).
 - [ ] Google Scholar link, if a profile is created.
 - [x] `github.com/gonzalocameto/hyena-lai` is public (checked 2026-11-15).
 - [ ] Enable GitHub Pages on `hyena-lai` (Settings → Pages → main / `/docs`) so the
