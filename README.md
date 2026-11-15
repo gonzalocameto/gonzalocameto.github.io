@@ -6,8 +6,7 @@ Personal site. Plain static HTML + CSS, no build step, no Jekyll (`.nojekyll`).
 index.html            the page
 assets/style.css      styles (light/dark follow the OS)
 assets/favicon.svg
-slides/               talk PDFs (e.g. slides/hyenalai-ciarp2026.pdf)
-qr/qr-ciarp26.svg     QR for the last CIARP slide → https://gonzalocameto.github.io/?ref=ciarp26
+qr/qr-ciarp26.svg     QR for the last CIARP slide → https://gonzalocameto.github.io/hyena-lai/?ref=ciarp26 (project page)
 ```
 
 ## Preview locally
@@ -45,7 +44,7 @@ What you get:
 
 ## Pending
 
-- [ ] Slides: copy the PDF to `slides/hyenalai-ciarp2026.pdf` and push **before the talk**. The button appears by itself from Thu Nov 26, 15:20 Mexico City time, and only if the file is there (date in the script at the bottom of `index.html`).
+- [ ] Slides: the only PDF is `docs/slides/hyenalai-ciarp2026.pdf` in the `hyena-lai` repo (written there by `build_handout.sh` in the talk sources). Push that repo before the talk; the Slides button here links to it and appears by itself from Thu Nov 26 (Mexico City time), only if the file is published.
 - [ ] Google Scholar link, if a profile is created.
 - [x] `github.com/gonzalocameto/hyena-lai` is public (checked 2026-11-15).
 - [ ] Enable GitHub Pages on `hyena-lai` (Settings → Pages → main / `/docs`) so the
