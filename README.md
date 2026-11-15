@@ -47,4 +47,6 @@ What you get:
 
 - [ ] Slides button → after the talk (Nov 26) copy the PDF to `slides/hyenalai-ciarp2026.pdf` and uncomment the link in `index.html`.
 - [ ] Google Scholar link, if a profile is created.
-- [ ] Confirm `github.com/gonzalocameto/hyena-lai` is public before the talk.
+- [x] `github.com/gonzalocameto/hyena-lai` is public (checked 2026-11-15).
+- [ ] Enable GitHub Pages on `hyena-lai` (Settings → Pages → main / `/docs`) so the
+      **Project page** button on this page resolves.
