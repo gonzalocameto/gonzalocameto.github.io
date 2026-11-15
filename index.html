@@ -86,7 +86,7 @@
         <a class="btn" href="https://doi.org/10.1007/978-3-032-43217-9_16" data-goatcounter-click="hyenalai-paper" target="_blank" rel="noopener">Paper</a>
         <a class="btn" href="https://github.com/gonzalocameto/hyena-lai" data-goatcounter-click="hyenalai-code" target="_blank" rel="noopener">Code</a>
         <a class="btn" href="https://huggingface.co/gcameto/hyena-lai" data-goatcounter-click="hyenalai-weights" target="_blank" rel="noopener">Weights</a>
-        <!-- Slides: hidden until Nov 27 (see script below) and until the PDF exists at this path. -->
+        <!-- Slides: hidden until Nov 26 (see script below) and until the PDF exists at this path. -->
         <a class="btn" id="slides-link" hidden href="slides/hyenalai-ciarp2026.pdf" data-goatcounter-click="hyenalai-slides" target="_blank" rel="noopener">Slides</a>
         <button class="btn" type="button" data-copy="bibtex" data-goatcounter-click="hyenalai-bibtex">Copy BibTeX</button>
       </div>
@@ -162,11 +162,11 @@
     try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
   });
 
-  // Slides button: shown from Nov 27, 2026 (00:00 Mexico City, UTC-6) — the morning after the
+  // Slides button: shown from Nov 26, 2026 (00:00 Mexico City, UTC-6) — the morning of the
   // talk — and only if the PDF has actually been uploaded.
   (function () {
     var link = document.getElementById('slides-link');
-    if (Date.now() < Date.parse('2026-11-27T00:00:00-06:00')) return;
+    if (Date.now() < Date.parse('2026-11-26T00:00:00-06:00')) return;
     fetch(link.href, { method: 'HEAD' }).then(function (r) { if (r.ok) link.hidden = false; }).catch(function () {});
   })();
 
