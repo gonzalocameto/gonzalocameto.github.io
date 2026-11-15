@@ -35,7 +35,7 @@ GitHub Pages has no visitor analytics (repo *Insights → Traffic* only counts v
 GoatCounter is free for personal sites, cookieless (no consent banner) and needs one script tag.
 
 1. Sign up at https://www.goatcounter.com/signup and pick a code, e.g. `gcameto` → dashboard at `https://gcameto.goatcounter.com`.
-2. In `index.html`, replace `YOURCODE` in the script at the bottom and uncomment it.
+2. Done: the script at the bottom of `index.html` uses the code `gcameto`.
 3. Push. Visits appear within seconds.
 
 What you get:
